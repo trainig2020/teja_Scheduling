@@ -1,6 +1,8 @@
 package com.pac;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -8,6 +10,7 @@ import javax.persistence.Table;
 @Table(name = "employee")
 public class Employee {
 	@Id
+
 	private int empId;
 	private String empName;
 	private String mobile;
